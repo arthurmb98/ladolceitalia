@@ -1,0 +1,103 @@
+@import "tailwindcss" source(none);
+@source "../**/*.{js,ts,jsx,tsx,html}";
+@source "../../index.html";
+
+@font-face {
+  font-family: "Macondo";
+  src: url("/fonts/Macondo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-background: #fbf6f3;
+  --color-elevated: #ffffff;
+  --color-muted-surface: #f0e8e2;
+  --color-primary: #42210b;
+  --color-primary-hover: #2e1608;
+  --color-coral: #ff826b;
+  --color-coral-soft: #ffb5a6;
+  --color-accent: #4193e4;
+  --color-accent-soft: #b2d4f5;
+  --color-foreground: #42210b;
+  --color-muted-foreground: #6b4e3a;
+  --color-border: #e8d9cf;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1ebe57;
+
+  --font-display: "Macondo", ui-serif, Georgia, serif;
+  --font-sans: "Fira Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.7s ease-out both;
+  --animate-fade-in: fade-in 0.6s ease-out both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-dvh bg-background font-sans text-foreground antialiased;
+    background-image:
+      radial-gradient(ellipse 70% 45% at 0% 0%, rgb(255 130 107 / 0.14), transparent),
+      radial-gradient(ellipse 50% 35% at 100% 100%, rgb(66 33 11 / 0.06), transparent);
+  }
+}
