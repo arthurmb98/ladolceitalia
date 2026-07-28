@@ -58,10 +58,6 @@ export function LeadCaptureSheet({
       setError('Informe um telefone válido com DDD.')
       return
     }
-    if (!orderNote) {
-      setError('Descreva o que deseja encomendar.')
-      return
-    }
 
     setSubmitting(true)
 
@@ -69,10 +65,12 @@ export function LeadCaptureSheet({
       leadService.save({
         name: trimmedName,
         phone: phoneDigits,
-        note: orderNote,
+        note: orderNote || undefined,
       })
 
-      const message = `${siteConfig.whatsappMessage}\n\nMeu nome é ${trimmedName}.\nPedido: ${orderNote}`
+      const message = orderNote
+        ? `${siteConfig.whatsappMessage}\n\nMeu nome é ${trimmedName}.\nPedido: ${orderNote}`
+        : `${siteConfig.whatsappMessage}\n\nMeu nome é ${trimmedName}.`
       const url = buildWhatsAppUrl(siteConfig.whatsapp, message)
 
       handleOpenChange(false)
@@ -122,14 +120,13 @@ export function LeadCaptureSheet({
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="lead-note">O que deseja encomendar?</Label>
+            <Label htmlFor="lead-note">O que deseja encomendar? (opcional)</Label>
             <Textarea
               id="lead-note"
               name="note"
               placeholder="Ex.: 20 tartellettes de frutas para sábado"
               value={note}
               onChange={(event) => setNote(event.target.value)}
-              required
             />
           </div>
 
