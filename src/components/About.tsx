@@ -2,12 +2,12 @@ import { siteConfig } from '@/config/site'
 
 export function About() {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-28">
+    <section className="relative overflow-hidden py-12 sm:py-16">
       <img
         src="/grafismos/Grafismo_1_laranja.png"
         alt=""
         aria-hidden
-        className="pointer-events-none absolute -right-16 top-0 h-[28rem] w-auto opacity-30 sm:-right-8 sm:h-[36rem]"
+        className="pointer-events-none absolute -right-10 top-1/2 h-48 w-auto -translate-y-1/2 opacity-25 sm:-right-6 sm:h-64"
       />
       <div className="relative mx-auto max-w-5xl px-5 sm:px-8">
         <p className="text-sm font-medium uppercase tracking-[0.18em] text-coral">
