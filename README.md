@@ -1,6 +1,6 @@
-# La Dolce Itália
+# La Dolce ItÃ¡lia
 
-Landing page para contato e encomendas de doces artesanais da marca **La Dolce Itália**.
+Landing page para contato e encomendas de doces artesanais da marca **La Dolce ItÃ¡lia**.
 
 ## Contatos
 
@@ -9,8 +9,8 @@ Landing page para contato e encomendas de doces artesanais da marca **La Dolce I
 | WhatsApp | +55 98 98756-1880 |
 | Instagram | [@ladolceitalia_](https://instagram.com/ladolceitalia_) |
 | E-mail | contato@ladolceitalia.com.br *(mock)* |
-| Endereço | São Luís, MA *(mock)* |
-| Horário | Seg–Sáb, 9h–18h *(mock)* |
+| EndereÃ§o | SÃ£o LuÃ­s, MA *(mock)* |
+| HorÃ¡rio | Segâ€“SÃ¡b, 9hâ€“18h *(mock)* |
 
 ## Stack
 
@@ -20,7 +20,7 @@ Landing page para contato e encomendas de doces artesanais da marca **La Dolce I
 
 ## Identidade
 
-Assets e manual de marca em [`identidade/`](./identidade/).
+Assets da marca em [`public/`](./public/) (logos, fontes, hero, produtos e grafismos).
 
 ### Cores
 
@@ -33,7 +33,7 @@ Assets e manual de marca em [`identidade/`](./identidade/).
 
 ### Tipografias
 
-- Títulos: **Macondo**
+- TÃ­tulos: **Macondo**
 - Textos: **Fira Sans**
 
 ## Desenvolvimento
@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-Build de produção:
+Build de produÃ§Ã£o:
 
 ```bash
 npm run build
