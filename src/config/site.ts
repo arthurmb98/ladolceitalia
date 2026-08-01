@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: 'Doces artesanais feitos com carinho e qualidade.',
   about:
     'A La Dolce Itália nasce do desejo de impactar pelo sabor e pela qualidade em cada detalhe. Massas crocantes, recheios cremosos e o cuidado artesanal em cada encomenda.',
-  whatsapp: '5598987561880',
+  whatsapp: '559888206527',
   whatsappMessage:
     'Olá! Gostaria de fazer uma encomenda na La Dolce Itália.',
   instagram: 'ladolceitalia_',

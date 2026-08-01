@@ -6,7 +6,7 @@ Landing page para contato e encomendas de doces artesanais da marca **La Dolce I
 
 | Canal | Valor |
 |-------|-------|
-| WhatsApp | +55 98 98756-1880 |
+| WhatsApp | +55 98 8820-6527 |
 | Instagram | [@ladolceitalia_](https://instagram.com/ladolceitalia_) |
 | E-mail | contato@ladolceitalia.com.br *(mock)* |
 | Endereço | São Luís, MA *(mock)* |
